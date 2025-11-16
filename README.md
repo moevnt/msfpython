@@ -1,6 +1,6 @@
 ## msfpython
 
-msfvenom is a wrapper for msfvenom commands written in python. 
+msfpython is a wrapper for msfvenom commands written in python. 
 Currently there are only three features:
   1. Autoremoval of the %COMPSEC% portion of a psh-cmd payload.
   2. Autosave to a preconfigured location. The current preconfigured location is /home/kali/Desktop/payloads but this can be changed by editing the save_directory variable in the source code.
@@ -11,5 +11,6 @@ To use this tool,
 2. Run the command: alias msfpython='python3 /path/to/file'
 3. Use msfpython to create payloads!
 
-NOTE: Currently this tool only works in the following format
-msfpython -p <PAYLOAD> LHOST=<IP> LPORT=<PORT> -f <FORMAT> -o <OUTPUT>
+NOTE: Currently this tool only works in the following format:
+
+msfpython -p PAYLOAD LHOST=IP LPORT=PORT -f FORMAT -o OUTPUT
